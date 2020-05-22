@@ -40,7 +40,8 @@ def peek(ind: int = 0) -> Any:
 	"""
 	global my_stack1
 	print(ind)
-	return my_stack1[ind]
+	if ind >= 0:
+		return my_stack1[-ind-1]
 
 
 def clear() -> None:
